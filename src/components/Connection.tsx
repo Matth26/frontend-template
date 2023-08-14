@@ -12,7 +12,7 @@ const Connection = () => {
   }, [refresh]);
 
   return (
-    <>
+    <div className="flex gap-2">
       {status === 'disconnected' ? (
         available.map((connector) => (
           <Button key={connector.id} onClick={() => connect(connector)}>
@@ -25,7 +25,7 @@ const Connection = () => {
           <Button onClick={disconnect}>Disconnect</Button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
