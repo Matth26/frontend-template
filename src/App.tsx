@@ -1,5 +1,6 @@
 import Connection from './components/Connection';
 import Read from './components/Read';
+import Write from './components/Write';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 
       <div className="flex-grow mx-auto mt-10">
         <Read />
+        <Write />
       </div>
 
       <div className="text-center py-2">Made with love by Matthias</div>
